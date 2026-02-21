@@ -1,4 +1,4 @@
-from money import Money
+from .money import Money
 
 class Product:
     
@@ -12,3 +12,5 @@ class Product:
         return self._price
     
     
+    def __str__(self):
+        return f"Name: {self._name}; Price: {self.price}"

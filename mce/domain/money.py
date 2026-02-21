@@ -23,3 +23,6 @@ class Money:
     @property
     def amount(self):
         return self._amount
+    
+    def __str__(self):
+        return f"{self.amount} {self.currency}"

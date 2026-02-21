@@ -1,8 +1,10 @@
+from .address import Address
 
 class Customer:
     def __init__(self, customer_id: str, name: str):
         self._id = customer_id
         self._name = name
+
         
     
     @property
@@ -14,5 +16,5 @@ class Customer:
         return self._name    
 
 
-    
+
 
