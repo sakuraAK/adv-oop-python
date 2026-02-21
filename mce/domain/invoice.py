@@ -10,10 +10,11 @@ class Invoice:
         return self._order.total()
     
     def generate_text(self) -> str:
-        result = ""
-        for line in self._order.lines:
-            result += line
-            result += "\n"            
-        return result
-        # return "\n".join([line for line in self._order.lines])
+        """
+        Generate a text representation of the invoice.
+        
+        Returns:
+            str: A formatted string containing the invoice details.
+        """
+        pass
     
